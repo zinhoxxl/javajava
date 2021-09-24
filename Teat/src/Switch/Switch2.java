@@ -20,7 +20,7 @@ public class Switch2 {
 		}
 		
 		
-		System.out.println("");
+		System.out.printf("성적은 %d이고 학점은 %s", score,grade);
 	}
 
 }
