@@ -9,6 +9,7 @@ public class ExampleTest2 {
 		String result = (!(score>90))?"°¡":"³ª";
 		System.out.println(result);
 		
+		
 	}
 
 }

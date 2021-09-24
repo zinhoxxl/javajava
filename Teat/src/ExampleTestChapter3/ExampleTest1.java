@@ -7,9 +7,13 @@ public class ExampleTest1 {
 		
 		int x = 10;
 		int y = 20;
-		int z = (++x) + (y--);
+		//연산식에 증/감 연산 포함.
+		int z = (++x) + (y--); // x=11 , y=19 z=31
 		System.out.println(z);
+		System.out.println(y);
+		System.out.println(x);
 		
+	
 
 	}
 
