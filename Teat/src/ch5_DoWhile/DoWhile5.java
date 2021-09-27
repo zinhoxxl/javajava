@@ -6,7 +6,7 @@ public class DoWhile5 {
 
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in); 
 		int ran = (int) (Math.random() * 100) + 1; // 정수 임의값 저장! 즉 정답
 		int cnt = 1; // 몇번만에 맞춘지 알려줄것
 

@@ -15,7 +15,7 @@ public class DoWhile4 {
 			j = 2;
 			System.out.println();
 		} while (i <= 9);
-
+  
 	}
 
 }

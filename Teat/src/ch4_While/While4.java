@@ -6,7 +6,7 @@ public class While4 {
 
 	public static void main(String[] args) {
 
-		System.out.println("2~9 사이의 숫자를 입력하세요.");
+		System.out.println("2~9 사이의 숫자를 입력하세요."); 
 		// 키보드로 숫자 0을 누르면 입력되는 값은? 48(ASCII코드 값)
 		try {
 			int num = System.in.read() - '0'; // 표준 입력 스트림 '0'키를 누른경우:48-48,'1'=>49-48=1

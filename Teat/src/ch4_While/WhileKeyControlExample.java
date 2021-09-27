@@ -15,7 +15,7 @@ public class WhileKeyControlExample {
 				System.out.println("----------------------");
 				System.out.println("1.증속 | 2.감속 | 3.중지:");
 				System.out.println("----------------------");
-				System.out.println("선택:");
+				System.out.print("선택:");
 			}
 			keyCode = System.in.read(); // 키보드 로부터 입력
 
@@ -28,10 +28,10 @@ public class WhileKeyControlExample {
 
 			} else if (keyCode == 51) { // "3"
 				run = false;
-			}
+			} 
 
 		} // while끝.
-
+		System.out.println("종료");
 	}
 
 }

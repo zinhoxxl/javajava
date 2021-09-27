@@ -20,7 +20,7 @@ public class WhileKeyControlExample2 {
 			// '0'의 int값은 48 49-48=1, 50-48=2 51-48=3
 			keyCode = System.in.read() - '0'; // 키보드 로부터 입력
 			System.in.read(); // \r =13
-			System.in.read(); // \r =10
+			System.in.read(); // \r =10 
 
 			if (keyCode == 1) { // "1"
 				speed++;

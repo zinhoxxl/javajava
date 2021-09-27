@@ -8,9 +8,9 @@ public class DoWhile1 {
 		do {
 			System.out.println("¾È³ç");
 			i++;
-
+ 
 		} while (i < 10);
-
+ 
 	}
 
 }

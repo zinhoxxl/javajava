@@ -2,7 +2,7 @@ package ch5_DoWhile;
 
 import java.util.Scanner;
 
-public class DoWhile2 {
+public class DoWhile2 { 
 
 	public static void main(String[] args) {
 

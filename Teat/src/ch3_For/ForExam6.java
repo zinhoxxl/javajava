@@ -10,7 +10,7 @@ public class ForExam6 {
 		//for블럭을 빠져나가는 조건을 블럭내에서 처리{}
 		if(i==10) break; //블럭을 빠져나가는 명령문 break;
 	}
-		System.out.println("종료");
+		System.out.println("종료"); 
 		
 
 	}

@@ -11,7 +11,7 @@ public class Break3 {
 				if (j > 3)
 					break Label; // Label로 표시된 바깥쪽 for문을 벗어남
 			}
-			System.out.println(); // 한줄 아래로 내리기
+			System.out.println(); // 한줄 아래로 내리기 
 		}
 
 	}

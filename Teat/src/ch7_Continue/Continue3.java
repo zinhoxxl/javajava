@@ -4,7 +4,7 @@ public class Continue3 {
 
 	public static void main(String[] args) {
         //이증 for문내의 continue;
-		for (int i = 0; i <= 9; i++) {
+		for (int i = 0; i <= 9; i++) { 
 			System.out.print("i" + i + "\t");
 			for (int j = 0; j <= 9; j++) {
 				System.out.print("j=" + j);

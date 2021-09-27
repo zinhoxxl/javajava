@@ -8,7 +8,7 @@ public class ContinueExample {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("정수 5개를 입력하세요:");
+		System.out.println("정수 5개를 입력하세요:"); 
 		int sum = 0;
 		for (int i = 0; i < 5; i++) { // 반복 횟수로 사용된 i
 			int n = scanner.nextInt();

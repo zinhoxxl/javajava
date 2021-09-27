@@ -13,7 +13,7 @@ public class Break2 {
 			}
 			System.out.println(); // 한줄 아래로 내리기
 		}
-
+ 
 	}
 
 }

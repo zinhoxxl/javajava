@@ -12,7 +12,7 @@ public class ForExam5Gugu3 {
 			System.out.println(); // 한줄 밑으로 내리는 명령문;
 		}
 
-		System.out.println("i=" + i);
+		System.out.println("i=" + i); 
 
 	}
 
