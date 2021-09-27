@@ -21,6 +21,7 @@ public class If4 {
 		System.out.printf("성적은 %d 이고 학점은 %s입니다.",score,grade);
 		
 		
+		
 
 	}
 

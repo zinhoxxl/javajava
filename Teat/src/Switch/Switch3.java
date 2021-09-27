@@ -16,6 +16,7 @@ public class Switch3 {
 		case 2: System.out.println("버스 타"); break;
 		case 3: System.out.println("택시 타"); break;
 		default: System.out.println("맘 대로 해"); break;
+		
 		}
 	}
 

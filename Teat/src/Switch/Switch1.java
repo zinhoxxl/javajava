@@ -9,7 +9,7 @@ public class Switch1 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("숫자를 입력 하세요");
+		System.out.println("숫자를 입력 하세요:");
 		int num = scanner.nextInt();
 		switch(num) {
 		case 1: System.out.println("L"); break;
@@ -18,6 +18,7 @@ public class Switch1 {
 		case 4: System.out.println("E"); break;
 		default: System.out.println("뭐야");
 		}
+		
 	}
 
 }

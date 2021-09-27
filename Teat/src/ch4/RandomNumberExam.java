@@ -13,4 +13,5 @@ public class RandomNumberExam {
 		System.out.println(ranI);
 	}
 
+	
 }
