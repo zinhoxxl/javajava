@@ -10,8 +10,8 @@ public class A {
 	// argument의 갯수만큼 String[] 배열로 생성되어서 전달.
 	// java A hello world my name is jinho
 	// => String[] args= {hello, world, my, name, is, jinho};
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) { // argument, 인자, 매개변수 부분
+
 		System.out.println("배열의 길이:" + args.length);
 		System.out.println("배열의 첫번째 값:" + args[0]);
 		System.out.println("배열의 두번째 값:" + args[1]);
