@@ -2,12 +2,12 @@ package ExampleTestChaper4;
 
 import java.util.Scanner;
 
-public class ExampleTest5 {
+public class Exam7 {
 
 	public static void main(String[] args) {
 
-		boolean run = true;
-		int balance = 0; // 잔고
+		boolean run = true; // 반복을 위한 조건 (반복 처리시 조건문확인 변수)
+		int balance = 0; // 잔고 (현재금액 변수)
 		Scanner scanner = new Scanner(System.in);
 
 		while (run) {
@@ -32,7 +32,7 @@ public class ExampleTest5 {
 				System.out.println(balance);
 				break;
 			case 4:
-				run = false;
+				run = false; // 또는 run = !run
 				break;
 			}
 			System.out.println();
