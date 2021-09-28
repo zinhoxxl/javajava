@@ -18,7 +18,7 @@ public class Ex7 {
 		System.out.println("최대값:" + max);
 		
 		for (int j : score) {
-			if (min > j) min = j;
+			if (min > j) min = j; 
 		}
 		System.out.println("최소값:" + min);
 		

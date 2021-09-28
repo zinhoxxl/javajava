@@ -13,7 +13,7 @@ public class Ex8Sort {
 				if (score[i] > score[j]) { // i의 값이 크면 j의 값과 교환
 					temp = score[i]; // i 의 값을 임시 변수로 저장
 					score[i] = score[j]; // j의 값을 i 에 저장 후
-					score[j] = temp; // 임시 저장한 값을 다시j에 저장
+					score[j] = temp; // 임시 저장한 값을 다시j에 저장 
 				} 
 			}
 		}
