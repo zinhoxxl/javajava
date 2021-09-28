@@ -1,4 +1,4 @@
-package ch3_Array2;
+package ch3_Array;
 
 public class Ex1 {
 

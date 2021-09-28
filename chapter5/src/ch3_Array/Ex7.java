@@ -1,4 +1,4 @@
-package ch3_Array2;
+package ch3_Array;
 
 public class Ex7 {
 
@@ -13,14 +13,12 @@ public class Ex7 {
 
 		for (int k : score) {
 			sum += k; // 평균
-			if (max < k)
-				max = k; // max값 보다 score 값이 크면 교환 (최대값)
+			if (max < k) max = k; // max값 보다 score 값이 크면 교환 (최대값)
 		}
 		System.out.println("최대값:" + max);
 		
 		for (int j : score) {
-			if (min > j)
-				min = j;
+			if (min > j) min = j;
 		}
 		System.out.println("최소값:" + min);
 		
