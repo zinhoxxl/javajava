@@ -18,6 +18,12 @@ public class Ex4 {
 		avg = total / (double) score.length;
 		System.out.println("평균:" + avg);
 
+		total = 0; // 값 재설정
+		// 향상된 for문으로 총점구하기
+		for (int s : score) {
+			total += s; // score[0],score[1],...
+		}
+
 	}
 
 }
