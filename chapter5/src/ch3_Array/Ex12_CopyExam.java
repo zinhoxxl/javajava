@@ -6,7 +6,7 @@ public class Ex12_CopyExam {
 	public static void main(String[] args) {
 
 		// 1.얕은 복사 - 배열 객체 1개 생성
-		int[] arr1 = {1,2,3,4,5};
+		int[] arr1 = {1,2,3,4,5}; 
 		int[] arr2 = arr1;  //참조하는 변수의 주소값을 넘겨서 생성
 		
 		for(int i =0; i<arr1.length;i++) System.out.print(arr1[1]);

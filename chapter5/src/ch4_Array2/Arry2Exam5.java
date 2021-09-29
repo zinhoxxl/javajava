@@ -7,7 +7,7 @@ public class Arry2Exam5 {
 		/// 2차원배열 - 성적표 작성
 
 		String title = "성적표";
-		String[] head = { "이름", "국어", "영어", "수학", "총점", "평균" };
+		String[] head = { "이름", "국어", "영어", "수학", "총점", "평균" }; 
 		System.out.println("\t\t" + title);
 		for (String h : head)
 			System.out.print(h + "\t");

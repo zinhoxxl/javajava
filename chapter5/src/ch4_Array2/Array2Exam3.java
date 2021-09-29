@@ -7,7 +7,7 @@ public class Array2Exam3 {
 		
 		//초기값으로 2차원배열 생성, 1차원배열 두개로 2차원 배열 하나 생성
 		//타입 [][] 변수 = new 타입[][]{{},{}}; 
-		int[][] scores = new int[][] {{1,2},{4,5,6}};
+		int[][] scores = new int[][] {{1,2},{4,5,6}};  
 		scores[0][0]=1; scores[0][1]=2; 
 		scores[1][0]=4; scores[1][1]=5; scores[1][2]=6;
 		

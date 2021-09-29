@@ -4,7 +4,7 @@ public class Ex13_CopyExam {
 
 	public static void main(String[] args) {
 
-		// 1.배열은 선언시의 배열의 길이를 선언 후 수정불가
+		// 1.배열은 선언시의 배열의 길이를 선언 후 수정불가 
 		int[] arr1 = { 1, 2, 3, 4, 5 };
 		int[] arr2 = { 6, 7, 8, 9, 10 }; // index번호 0,1,2,3,4
 		// 두개의 배열을 합치기

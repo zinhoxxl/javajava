@@ -6,10 +6,10 @@ public class Ex22 {
 
 		// 참조타입(String) 1차원 배열 선언
 		String[] snake = { "구렁이", "팔렁이", "칠렁이", "육렁이", "오렁이" };
-		String[] insect = { "메뚜기", "개미", "지렁이" };
+		String[] insect = { "메뚜기", "개미", "지렁이" }; 
 		
 		// 두배열 합치기
-		String[] animal = new String[snake.length + insect.length];
+		String[] animal = new String[snake.length + 1 + insect.length];
 
 		// 합치기
 		for (int i = 0; i < snake.length; i++) animal[i] = snake[i];

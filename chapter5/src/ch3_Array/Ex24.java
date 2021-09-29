@@ -2,7 +2,7 @@ package ch3_Array;
 
 public class Ex24 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 
 		// ÂüÁ¶Å¸ÀÔ(String) 1Â÷¿ø ¹è¿­ ¼±¾ğ
 		String[] snake = { "±¸··ÀÌ", "ÆÈ··ÀÌ", "Ä¥··ÀÌ", "À°··ÀÌ", "¿À··ÀÌ" };

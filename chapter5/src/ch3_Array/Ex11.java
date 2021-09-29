@@ -11,7 +11,7 @@ public class Ex11 {
 		int[] intArr2 = intArr1;  // intArr2에는 intArr1의 주소값이 복사됨  (둘다 같은 주소를 공유함!!)
 		                          // 즉, "얕은 복사" 라고 한다!
 		for(int a : intArr1)
-			System.out.print(a+"  ");
+			System.out.print(a+"  "); 
 		System.out.println();
 		for(int b : intArr2)
 			System.out.print(b+"  ");
@@ -26,7 +26,7 @@ public class Ex11 {
 		System.out.println();
 		for(int b : intArr2)
 			System.out.print(b+"  ");
-		System.out.println();
+		System.out.println(); 
 		
 
 	}

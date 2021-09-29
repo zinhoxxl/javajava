@@ -5,7 +5,7 @@ public class Ex10 {
 	public static void main(String[] args) {
 
 		// 1차원 배열의 복사
-		int[] intArr1 = { 1, 2, 3, 4, 5 }; // index 번호 : 0,1,2,3,4 -- 5는 범위를 벗어남
+		int[] intArr1 = { 1, 2, 3, 11, 5 }; // index 번호 : 0,1,2,3,4 -- 5는 범위를 벗어남
 		System.out.println(intArr1.length);
 
 		// for(int i =0; i <6; i++)
@@ -24,7 +24,7 @@ public class Ex10 {
 		// intArr2의 마지막에 해당값을 저장
 		// intArr2.length <= 6;
 		// intArr2.length -1 = 5;
-		// intArr2.length의 마지막 index번호는? 5(0부터 시작) = intArr2.length-1
+		// intArr2.length의 마지막 index번호는? 5(0부터 시작) = intArr2.length-1 
 		intArr2[intArr2.length - 1] = 6; // [1] [2] [3] [4] [5] [6]
 
 		for (int s : intArr2)

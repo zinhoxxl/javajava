@@ -5,7 +5,7 @@ public class Ex21 {
 	public static void main(String[] args) {
 
 		// ÂüÁ¶Å¸ÀÔ(String) 1Âק¿ר ¹ט¿­ ¼±¾נ
-		String[] snake = { "±¸··ÀÌ", "ÆÈ··ÀÌ", "Ä¥··ÀÌ", "À°··ÀÌ", "¿À··ÀÌ" };
+		String[] snake = { "±¸··ÀÌ", "ÆÈ··ÀÌ", "Ä¥··ÀÌ", "À°··ÀÌ", "¿À··ÀÌ" }; 
 		
 
 		for (int i = 0; i < snake.length; i++)
