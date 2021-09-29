@@ -6,6 +6,7 @@ public class ArrExam1 {
 
 	public static void main(String[] args) {
 
+		// 강사님께서 하신 것 가독성과 향상된 배열 아주좋다
 		// 성적표 프로그램
 		// 스캐너로 값을 입력 받기 int[] score = { 76, 45, 34, 89, 100, 50, 90, 92 }; int[] scores
 		// =new int[8];
@@ -14,7 +15,7 @@ public class ArrExam1 {
 		// 1.성적입력 | 2.통계(합/평균) 출력 | 3. 성적순 출력하기 | 4. 종료
 		// ch4 7번 확인문제 참조.
 
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in); //
 
 		int[] scores = new int[8];
 		boolean run = true;
