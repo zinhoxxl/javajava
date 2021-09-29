@@ -13,7 +13,7 @@ public class BreakExample4 {
 			System.out.print(">>");
 			String text = scanner.nextLine(); // 한 줄 단위로 문자열을 입력받는 메소드
 			System.out.println("입력값:" + text);
-			// if (text == "exit") // "exit"이 입력되면 반복 종료
+			// if (text == "exit") // "exit"이 입력되면 반복 종료  (즉, 기본타입과 다르게 참조타입은 ==로 비교연산하면 안됨)
 			//if(text.equals("exit")) // 내용비교
 			if("exit".equals(text)) // "exit"리터럴이 String객체가 됨 -> 객체는 메소드를 가짐
 				break;
