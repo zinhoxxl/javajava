@@ -1,6 +1,6 @@
 package ch3_Array;
 
-public class Ex9 {
+public class Ex09 {
 
 	public static void main(String[] args) {
 

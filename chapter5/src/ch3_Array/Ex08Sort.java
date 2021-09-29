@@ -1,6 +1,6 @@
 package ch3_Array;
 
-public class Ex8Sort {
+public class Ex08Sort {
 
 	/* 배열 요소들의 타입이 기본 타입 */
 	public static void main(String[] args) {
