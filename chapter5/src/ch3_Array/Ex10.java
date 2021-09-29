@@ -16,8 +16,8 @@ public class Ex10 {
 		// 방법: 새로운 배열을 만들어서 기존의 각 요소들의 값은 새로운 배열로 복사하면 됨.
 		// 추가로 6을 저장
 		int[] intArr2 = new int[6]; // [0] [0] [0] [0] [0] [0] - 해당타입의 기본값으로 초기화
-		
-        // 먼저 intArr1배열의 내용을 복사한 후에..
+
+		// 먼저 intArr1배열의 내용을 복사한 후에..
 		for (int i = 0; i < intArr1.length; i++) { // i<intArr2.length, i<intArr1.length
 			intArr2[i] = intArr1[i]; // [1] [2] [3] [4] [5] [0]
 		}
@@ -25,11 +25,23 @@ public class Ex10 {
 		// intArr2.length <= 6;
 		// intArr2.length -1 = 5;
 		// intArr2.length의 마지막 index번호는? 5(0부터 시작) = intArr2.length-1
-		intArr2[intArr2.length-1]=6; // [1] [2] [3] [4] [5] [6]
+		intArr2[intArr2.length - 1] = 6; // [1] [2] [3] [4] [5] [6]
 
-		for(int s : intArr2)
-			System.out.print(s+"  ");
+		for (int s : intArr2)
+			System.out.print(s + "  ");
 		System.out.println();
+
+		// 배열내의 특정 인덱스 번호에 새로운 값을 저장
+		intArr2[3] = 10;
+		for (int i : intArr1)
+			System.out.print(i + "  ");
+		System.out.println();
+
+		for (int j : intArr2)
+			System.out.print(j + "  ");
+		
+		// 
+
 	}
 
 }
