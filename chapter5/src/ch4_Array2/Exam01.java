@@ -14,16 +14,16 @@ public class Exam01 {
 
 		Scanner scanner = new Scanner(System.in);
 
-		String id;
-		String pwd;
+		String id = null;
+		String pwd = null;
 		int cnt = 0;
 		boolean run = true;
 
 		while (run) {
 			System.out.println("아이디와 패스워드를 입력하세요.");
-			System.out.println("아이디> ");
+			System.out.println("아이디>");
 			id = scanner.next();
-			System.out.println("패스워드> ");
+			System.out.println("패스워드>"); 
 			pwd = scanner.next();
 
 			cnt++;
@@ -31,13 +31,13 @@ public class Exam01 {
 			if (id.equals("hong") && pwd.equals("1234")) {
 				System.out.println("login 성공");
 				break;
-			} else {
+			} else { 
 
 				if (cnt == 5) {
 					System.out.println(cnt + "회 실패하였습니다. 프로그램을 종료합니다.");
 					run = !run;
 
-				} else {
+				} else { 
 					System.out.println(cnt + "회 실패하였습니다.");
 				}
 
