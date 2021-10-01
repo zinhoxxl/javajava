@@ -4,7 +4,7 @@ package ch03;
 public class SomeClass3 {
 
 	// 필드에 값을 저장하는 방법     // 1. 선언시 초기화
-	int f1; 
+	int f1=10; 
 
 	// 생성자 - 필드초기화
 	SomeClass3() {this.f1=10;} // 3. 생성자로 필드를 초기화
