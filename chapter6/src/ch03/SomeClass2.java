@@ -22,7 +22,8 @@ public class SomeClass2 {
 	}
 
 	void method2() {
-		System.out.println(f1); // 오류가 안나는 이유? 기본값을 갖고있기 때문
+		this.f1 = 10;
+		System.out.println(f1); // 오류가 안나는 이유? 기본값을 갖고있기 때문 때문이다 
 	}
 
 }
