@@ -5,3 +5,4 @@ public class shape {
       
       
 }
+// 삼각형 사각형 오각형
