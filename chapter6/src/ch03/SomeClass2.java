@@ -7,8 +7,9 @@ public class SomeClass2 {
 	int f1; // 정수타입의 값을 저장하는 변수 - 클래스범위에서 선언된 변수 - field - (초기화를 해야 읽을 수 있음.)
 	        // 클래스 범위에서 선언된 필드는 해당 타입의 기본값으로 (자동)초기화됨
 
-	// 생성자
-	SomeClass2() {}
+	// 생성자 - 필드초기화
+	SomeClass2() {this.f1=10;}
+	
 
 	// 메소드
 	void method() {
