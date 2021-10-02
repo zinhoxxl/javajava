@@ -11,7 +11,7 @@ public class BodyPerCalcExam {
 		String con;
 		int age = 0;
 		int weight = 75;
-		int height = 175;
+		int height = 175; 
 
 		Scanner scanner = new Scanner(System.in);
 
