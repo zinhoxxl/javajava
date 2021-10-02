@@ -24,6 +24,7 @@ public class ArrayCopyExam2 {
 		System.arraycopy(oldStrArray, 1, newStrArray, 3, oldStrArray.length - 1);
 		for (int i = 0; i < newStrArray.length; i++)
 			System.out.print(newStrArray[i] + "  ");
+		System.out.println("이진호는 코딩을 매우 잘한다 고로 이진호는 매우 뛰어난 코더가 될것이다.");
 
 		
 		System.out.println();
