@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BodyPerCalcExam3Final {
 
-	public static void main(String[] args) { 
+	public static void main(String[] args) {
 
 		boolean run = true;
 		String gender = null;
@@ -20,12 +20,12 @@ public class BodyPerCalcExam3Final {
 		System.out.println("1.성별 |2.나이 |3.키 |4.몸무게");
 		System.out.println("--------------------------");
 		System.out.println();
-        
+
 		Scanner scanner = new Scanner(System.in);
 
 		while (run) {
- 
- 			System.out.println("시작하시려면 1을 입력하세요");
+
+			System.out.println("시작하시려면 1을 입력하세요");
 			selectNo = 0;
 			selectNo = scanner.nextInt();
 			if (selectNo != 1) {
@@ -70,25 +70,25 @@ public class BodyPerCalcExam3Final {
 				System.out.println("결과>");
 				System.out.println();
 
-				if (gender.equals("남자")) { 
-				// 제지방량
-				double result = ST1 * weight - ST2 * ((weight * weight) / (double) (height * height));
-				System.out.println("제지방량: [" + Math.round(result) + "kg] 입니다");
+				// 남자
+				if (gender.equals("남자")) {
+					// 제지방량
+					double result = ST1 * weight - ST2 * ((weight * weight) / (double) (height * height));
+					System.out.println("제지방량: [" + Math.round(result) + "kg] 입니다");
 
-				// 체지방량
-				double result2 = weight - result;
+					// 체지방량
+					double result2 = weight - result;
 
-				System.out.println("체지방량: [" + Math.round(result2) + "kg] 입니다");
+					System.out.println("체지방량: [" + Math.round(result2) + "kg] 입니다");
 
-				// 체지방률 구하기 = 체지방량*100/체중
-				final double ST3 = 100;
+					// 체지방률 구하기 = 체지방량*100/체중
+					final double ST3 = 100;
 
-				double result3 = result2 * ST3 / weight;
+					double result3 = result2 * ST3 / weight;
 
-				System.out.println("체지방률: [" + Math.round(result3) + "%] 입니다.");
-				System.out.println();
+					System.out.println("체지방률: [" + Math.round(result3) + "%] 입니다.");
+					System.out.println();
 
-					
 					if (result3 < 12) {
 						System.out.println("  " + "[ 야윈체형 입니다 ]" + "  ");
 					} else if (result3 >= 12 && result3 <= 17) {
@@ -101,6 +101,7 @@ public class BodyPerCalcExam3Final {
 						System.out.println("[ 고도비만 입니다 ]");
 				}
 
+				// 여자
 				if (gender.equals("여자")) {
 					// 제지방량
 					double result = ST11 * weight - ST2 * ((weight * weight) / (double) (height * height));
@@ -119,7 +120,6 @@ public class BodyPerCalcExam3Final {
 					System.out.println("체지방률: [" + Math.round(result3) + "%] 입니다.");
 					System.out.println();
 
-
 					if (result3 < 22) {
 						System.out.println("  " + "[ 야윈체형 입니다 ]" + "  ");
 					} else if (result3 >= 22 && result3 <= 27) {
@@ -134,22 +134,21 @@ public class BodyPerCalcExam3Final {
 
 				System.out.println();
 
-			case 6:		
+			case 6:
 				System.out.println("계속하시려면 yes, 종료하시려면 no를 입력하세요.");
 
 				con = scanner.next();
 
 				if (con.equals("yes")) {
-				System.out.println("다시 시작합니다"); 
-				    break;
-				
+					System.out.println("다시 시작합니다");
+					break;
+
 				}
 
 				if (con.equals("no")) {
 					System.out.println("프로그램을 종료합니다.");
 					run = false;
-					break;
-
+					
 				}
 
 			}
