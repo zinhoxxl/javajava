@@ -7,8 +7,8 @@ public class BodyPerCalcExam3Final {
 	public static void main(String[] args) {
 
 		boolean run = true;
-		String gender = null;
-		String con = null;
+
+		String con;
 		int age = 0;
 		int weight = 0;
 		int height = 0;
@@ -16,7 +16,7 @@ public class BodyPerCalcExam3Final {
 
 		System.out.println("체지방량구하기~ 순서대로 작성해주세요");
 		System.out.println();
-		System.out.println("--------------------------");
+		System.out.println("--------------------------");    //강사님은 println 다음에 바로 값을 scanner에 저장함
 		System.out.println("1.성별 |2.나이 |3.키 |4.몸무게");
 		System.out.println("--------------------------");
 		System.out.println();
@@ -24,7 +24,7 @@ public class BodyPerCalcExam3Final {
 		Scanner scanner = new Scanner(System.in);
 
 		while (run) {
-
+			String gender = scanner.next();
 			System.out.println("시작하시려면 1을 입력하세요");
 			selectNo = 0;
 			selectNo = scanner.nextInt();
@@ -123,7 +123,7 @@ public class BodyPerCalcExam3Final {
 					if (result3 < 22) {
 						System.out.println("  " + "[ 야윈체형 입니다 ]" + "  ");
 					} else if (result3 >= 22 && result3 <= 27) {
-						System.out.println("  " + "[ 표준체형 입니다 ]" + "  ");
+						System.out.println("  " + "[ 표준체형 입니다 ]" + "  "); // bodyFatRatio <=27
 					} else if (result3 >= 28 && result3 <= 35) {
 						System.out.println("  " + "[ 과체중 입니다 ]" + "  ");
 					} else if (result3 >= 36 && result3 <= 40) {
@@ -137,10 +137,10 @@ public class BodyPerCalcExam3Final {
 			case 6:
 				System.out.println("계속하시려면 yes, 종료하시려면 no를 입력하세요.");
 
-				con = scanner.next();
+				con = scanner.next();      // String yesNo = scanner.next();
 
 				if (con.equals("yes")) {
-					System.out.println("다시 시작합니다");
+					System.out.println("다시 시작합니다");   // if(yesNo.equals("no")) run =! run;
 					break;
 
 				}
@@ -148,7 +148,7 @@ public class BodyPerCalcExam3Final {
 				if (con.equals("no")) {
 					System.out.println("프로그램을 종료합니다.");
 					run = false;
-					
+
 				}
 
 			}
