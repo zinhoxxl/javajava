@@ -9,20 +9,19 @@ public class MethodExam {
 	}
 
 	// 2. 매개변수 없고, 리턴타입 있는 메소드
-    // - 호출시 결과값만 되돌려주는 경우 사용.
+	// - 호출시 결과값만 되돌려주는 경우 사용.
 	String greeting() {
 		return "hello";
-
 	}
 
 	// 3. 매개변수 있고, 리턴타입 없는 메소드(void)
-    // - 매개변수는 받고 해당 메소드 내에서 처리하고 결과를 되돌려 주지 않을 때 사용.
+	// - 매개변수는 받고 해당 메소드 내에서 처리하고 결과를 되돌려 주지 않을 때 사용.
 	void sumVoid(int x, int y) {
 		System.out.println("result=" + (x + y));
 	}
 
 	// 4. 매개변수 없고, 리턴타입 없는 메소드(void)
-    // - 호출시 메소드 내에서 처리하고 결과를 되돌려주지 않은 경우 사용.
+	// - 호출시 메소드 내에서 처리하고 결과를 되돌려주지 않은 경우 사용.
 	void greetingVoid() {
 		System.out.println("hi");
 	}
