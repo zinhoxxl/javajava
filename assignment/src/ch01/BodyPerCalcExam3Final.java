@@ -7,7 +7,7 @@ public class BodyPerCalcExam3Final {
 	public static void main(String[] args) {
 
 		boolean run = true;
-
+		String gender;
 		String con;
 		int age = 0;
 		int weight = 0;
@@ -16,7 +16,7 @@ public class BodyPerCalcExam3Final {
 
 		System.out.println("체지방량구하기~ 순서대로 작성해주세요");
 		System.out.println();
-		System.out.println("--------------------------");    //강사님은 println 다음에 바로 값을 scanner에 저장함
+		System.out.println("--------------------------"); // 강사님은 println 다음에 바로 값을 scanner에 저장함
 		System.out.println("1.성별 |2.나이 |3.키 |4.몸무게");
 		System.out.println("--------------------------");
 		System.out.println();
@@ -24,7 +24,7 @@ public class BodyPerCalcExam3Final {
 		Scanner scanner = new Scanner(System.in);
 
 		while (run) {
-			String gender = scanner.next();
+			gender = scanner.next();
 			System.out.println("시작하시려면 1을 입력하세요");
 			selectNo = 0;
 			selectNo = scanner.nextInt();
@@ -137,10 +137,10 @@ public class BodyPerCalcExam3Final {
 			case 6:
 				System.out.println("계속하시려면 yes, 종료하시려면 no를 입력하세요.");
 
-				con = scanner.next();      // String yesNo = scanner.next();
+				con = scanner.next(); // String yesNo = scanner.next();
 
 				if (con.equals("yes")) {
-					System.out.println("다시 시작합니다");   // if(yesNo.equals("no")) run =! run;
+					System.out.println("다시 시작합니다"); // if(yesNo.equals("no")) run =! run;
 					break;
 
 				}
