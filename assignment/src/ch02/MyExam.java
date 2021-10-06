@@ -11,6 +11,10 @@ public class MyExam {
 	static final double maleSTD = 1.10, femaleSTD = 1.07;
 	static final int COMSTD = 128, COMSTD2 = 100;
 	static boolean run = true;
+	static double leanBodyMass;
+	static double bodyFatMass;
+	static double bodyFatRatio;
+	static double leanBodyRatio;
 
 	public static void main(String[] args) { // 메인시작
 		while (run) {
@@ -19,13 +23,13 @@ public class MyExam {
 
 			inputInfo();
 
-			double leanBodyMass = getLeanBodyMass(gender, weight, height);
+			MyExam.leanBodyMass = getLeanBodyMass(gender, weight, height);
 
-			double bodyFatMass = getBodyFatMass(leanBodyMass);
+			MyExam.bodyFatMass = getBodyFatMass(leanBodyMass);
 
-			double leanBodyRatio = getLeanBodyRatio(leanBodyMass);
+			MyExam.leanBodyRatio = getLeanBodyRatio(leanBodyMass);
 
-			double bodyFatRatio = getBodyFatRatio(bodyFatMass);
+			MyExam.bodyFatRatio = getBodyFatRatio(bodyFatMass);
 
 			String result = getResult(gender , bodyFatRatio);
 
@@ -35,7 +39,7 @@ public class MyExam {
 
 		}
 		System.out.println("프로그램 종료");
-
+ 
 	} // 메인종료 (여기까지가 실행문)
 
 	// 시작안내
@@ -133,14 +137,17 @@ public class MyExam {
 	}
 
 	// 결과 출력
-	static void printResult(double leanBodyMass, double leanBodyRatio, double bodyFatMass, double bodyFatRatio,
-			String result) {
-		System.out.println("결과:>");
-		System.out.printf("제지방량:%.2f\n", leanBodyMass);
-		System.out.printf("제지방율:%.2f\n", leanBodyRatio);
-		System.out.printf("체지방량:%.2f\n", bodyFatMass);
-		System.out.printf("체지방율:%.2f\n", bodyFatRatio);
-		System.out.println("결과:" + result);
+	static void printResult(double leanBodyMass, 
+							double leanBodyRatio, 
+							double bodyFatMass, 
+							double bodyFatRatio,
+							String result) {
+						System.out.println("결과:>");
+						System.out.printf("제지방량:%.2f\n", leanBodyMass);
+						System.out.printf("제지방율:%.2f\n", leanBodyRatio);
+						System.out.printf("체지방량:%.2f\n", bodyFatMass);
+						System.out.printf("체지방율:%.2f\n", bodyFatRatio);
+						System.out.println("결과:" + result);
 	}
 
 	// 재시작 여부
