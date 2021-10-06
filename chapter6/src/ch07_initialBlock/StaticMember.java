@@ -13,7 +13,7 @@ class CurrencyConverter {
 	public static double toKWR(double dollar) {
 		return dollar * rate; // 달러를 한국 원화로 변환
 	}
-
+ 
 	public static void setRate(double r) {
 		rate = r; // 환율 설정. KWR/$1
 	}
@@ -25,7 +25,7 @@ public class StaticMember {
 		System.out.print("환율(1달러)>> ");
 		double rate = scanner.nextDouble();
 		CurrencyConverter.setRate(rate); // 미국 달러 환율 설정
-		System.out.println("백만원은 $" + CurrencyConverter.toDollar(1000000) + "입니다.");
+		System.out.println("백만원은 $" + CurrencyConverter.toDollar(1000000) + "입니다.");  // 숫자는 백만의 인자값
 		System.out.println("$100는 " + CurrencyConverter.toKWR(100) + "원입니다.");
 		scanner.close();
 	}
