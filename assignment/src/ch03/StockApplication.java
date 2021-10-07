@@ -24,7 +24,7 @@ public class StockApplication {
 				createStock();
 				break;
 
-			case 2:
+			case 2: 
 				stockList();
 				break;
 
@@ -131,7 +131,7 @@ public class StockApplication {
 			System.out.println("찾으시는 Stock은 존재하지 않습니다..");
 		}
 	}
-
+ 
 	// 입출고시 동일한 Stock객체 찾기
 	private static Stock findStock(String name) {
 		Stock stock = null;

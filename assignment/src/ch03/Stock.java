@@ -1,7 +1,5 @@
 package ch03;
 
-import java.util.Arrays;
-
 public class Stock {
 
 	// 필드
@@ -13,19 +11,18 @@ public class Stock {
 
 	{
 		seq++;
-		item = itemNo + "-" + seq + seq + seq; // 계좌가 생성 될때마다 저장
+		item = itemNo + "-" + String.format("%03d" , seq); // 계좌가 생성 될때마다 저장
+	
 	}
 
 	// 생성자
 	public Stock(String name, int qty) {
-		
+
 		this.name = name;
 		this.qty = qty;
 	}
 
 	// 메소드
-	
-
 
 	public String getItem() {
 		return item;
@@ -35,6 +32,7 @@ public class Stock {
 		this.item = item;
 	}
 
+	
 	public String getName() {
 		return name;
 	}
@@ -43,6 +41,7 @@ public class Stock {
 		this.name = name;
 	}
 
+	
 	public int getQty() {
 		return qty;
 	}
@@ -51,11 +50,11 @@ public class Stock {
 		this.qty = qty;
 	}
 
+	
 	// Stock 정보 출력
 	@Override
 	public String toString() {
 		return "Stock [ 제품시리얼넘버=" + item + ", 제품명=" + name + ", 재고량=" + qty + " ]";
 	}
-	
-	
+
 }
