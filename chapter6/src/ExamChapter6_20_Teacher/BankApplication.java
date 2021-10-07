@@ -86,17 +86,17 @@ public class BankApplication { // 계좌 저장소 생성 (main에서 사용 가능하게 stati
 		System.out.print("예금액: ");
 		int amount = scanner.nextInt();
 
-		Account acc = findAccount(ano);
+		Account account = findAccount(ano);
 
-		if (acc != null) {
-			acc.setBalance(acc.getBalance() + amount);
+		if (account != null) {
+			account.setBalance(account.getBalance() + amount);
+			System.out.println("결과: 입금이 성공되었습니다.");
 		}
-		System.out.println("결과: 입금이 성공되었습니다.");
 
-		if (acc == null)
-
+		else {
 			System.out.println("결과: 계좌가 없습니다.");
-		return;
+
+		}
 
 	}
 
@@ -116,11 +116,16 @@ public class BankApplication { // 계좌 저장소 생성 (main에서 사용 가능하게 stati
 		if (account != null) {
 			if (account.getBalance() - amount >= 0) {
 				account.setBalance(account.getBalance() - amount);
+				System.out.println("결과: 출금이 성공되었습니다.");
+			} else {
+				System.out.println("결과: 잔고가 부족합니다.");
 			}
-			System.out.println("결과: 출금이 성공되었습니다.");
-		}
-	}
 
+		} else {
+			System.out.println("결과: 계좌가 없습니다.");
+		}
+
+	}
 	// Account 배열에서 ano와 동일한 Account 객체 찾기-
 	// 참조타입 배열의 값 비교
 	private static Account findAccount(String ano) {
@@ -129,7 +134,7 @@ public class BankApplication { // 계좌 저장소 생성 (main에서 사용 가능하게 stati
 			account = accountArray[i];
 			if (account != null) {
 				if (account.getAno().equals(ano))
-					return account;
+					break;
 			}
 		}
 		return account;
