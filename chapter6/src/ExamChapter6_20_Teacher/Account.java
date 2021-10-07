@@ -15,7 +15,7 @@ public class Account { // 계좌정보
 		this.balance = balance;
 	}
 
-	// 생성자
+	// 메소드
 	public String getAno() { 
 		return ano;
 	}

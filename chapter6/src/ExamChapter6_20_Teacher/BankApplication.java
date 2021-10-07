@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BankApplication { // 계좌 저장소 생성 (main에서 사용 가능하게 static으로 생성)
 	private static Account[] accountArray = new Account[100];
-	private static Scanner scanner = new Scanner(System.in);
+	private static Scanner scanner = new Scanner(System.in); 
 	private static int idx; // idx = 0;
 
 	public static void main(String[] args) { // 메인시작
