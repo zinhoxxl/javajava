@@ -2,62 +2,60 @@ package ch03;
 
 import java.util.Arrays;
 
-public class Account {
+public class Stock {
 
 	// 필드
-	static final String bankNo = "111";
+	static final String itemNo = "111";
 	static int seq = 0;
-	private String ano;
-	private String owner;
-	private int balance;
+	private String item;
+	private String name;
+	private int qty;
 
 	{
 		seq++;
-		ano = bankNo + "-" + seq + seq + seq;
+		item = itemNo + "-" + seq + seq + seq; // 계좌가 생성 될때마다 저장
 	}
 
 	// 생성자
-	public Account(String ano, String owner, int balance) {
-		this.ano = ano;
-		this.owner = owner;
-		this.balance = balance;
+	public Stock(String name, int qty) {
+		
+		this.name = name;
+		this.qty = qty;
 	}
 
 	// 메소드
-	public static int getSeq() {
-		return seq;
+	
+
+
+	public String getItem() {
+		return item;
 	}
 
-	public static void setSeq(int seq) {
-		Account.seq = seq;
+	public void setItem(String item) {
+		this.item = item;
 	}
 
-	public String getAno() {
-		return ano;
+	public String getName() {
+		return name;
 	}
 
-	public void setAno(String ano) {
-		this.ano = ano;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getOwner() {
-		return owner;
+	public int getQty() {
+		return qty;
 	}
 
-	public void setOwner(String owner) {
-		this.owner = owner;
+	public void setQty(int qty) {
+		this.qty = qty;
 	}
 
-	public int getBalance() {
-		return balance;
+	// Stock 정보 출력
+	@Override
+	public String toString() {
+		return "Stock [ 제품시리얼넘버=" + item + ", 제품명=" + name + ", 재고량=" + qty + " ]";
 	}
-
-	public void setBalance(int balance) {
-		this.balance = balance;
-	}
-
-	public static String getBankno() {
-		return bankNo;
-	}
-
+	
+	
 }
