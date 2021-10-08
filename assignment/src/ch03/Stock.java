@@ -11,11 +11,17 @@ public class Stock {
 
 	{
 		seq++;
-		item = itemNo + "-" + String.format("%03d" , seq); // 계좌가 생성 될때마다 저장
-	
-	}
+		item = itemNo + "-" + String.format("%03d" , seq); // 제품시리얼넘버 String.format사용해서 001만들기
 
-	// 생성자
+//      이런 방법도 있다
+//		DecimalFormat df = new DeciamalFormat("000");
+//		item = itemNo + "-" + df.format(seq);
+	}
+		
+		
+		
+
+	// 생성자 
 	public Stock(String name, int qty) {
 
 		this.name = name;
