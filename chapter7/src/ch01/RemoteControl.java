@@ -23,15 +23,15 @@ class TVRemoteControl implements RemoteControl{
 	}
 }
 
+ 
 
+class A {
+	// 변수
+	public int MAX_VOLUME; // 자동으로 0으로 초기화
+	// 상수
+	public int MIN_VOLUME = 0;
 
-//public class A {
-//	// 변수
-//	public int MAX_VOLUME; // 자동으로 0으로 초기화
-//	// 상수
-//	public int MIN_VOLUME = 0;
-//
-//	// 메소드 - 추상메소드
-//	void method() {MAX_VOLUME = 10;} // 선언부 (선언시 실체가 있어야함)
-//
-//}
+	// 메소드 - 추상메소드
+	void method() {MAX_VOLUME = 10;} // 선언부 (선언시 실체가 있어야함)
+
+}
