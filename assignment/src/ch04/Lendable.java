@@ -2,49 +2,14 @@ package ch04;
 
 public interface Lendable {
 
-	int BORROWED = 1;
-	int NORMAL = 0;
+	// 상수 -flag: 상태표시
+	int BORROWED = 1; // 대출
+	int NORMAL = 0; // 미대출
+	
+	// 대여 메소드
 	void checkOut(String name, String date);
+	// 반납 메소드
 	void checkIn();
 	
 }
 
-
-
-
-class SeperateVolume implements Lendable {
-
-	String requestNo;
-	String title;
-	String writer;
-	int state;
-	String name = "", date = "";
-	
-
-	public SeperateVolume(String requestNo, String title, String writer) {
-		this.requestNo = requestNo;
-		this.title = title;
-		this.writer = writer;
-	}
-
-	
-	@Override
-	public void checkOut(String name, String date) {
-		if(state == BORROWED) return;
-		this.name=name;
-		this.date=date;
-		state = BORROWED; // 대출상태 변경
-		System.out.println(title + "를" + name + "가 대출했습니다");
-		System.out.println("대출일자:" + date);
-	}
-
-	@Override
-	public void checkIn() {
-		name = "";
-		date = "";
-		state = NORMAL;
-		System.out.println(title + "을 반납했습니다");
-				
-	}
-	
-}
