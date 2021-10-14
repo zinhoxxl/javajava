@@ -6,9 +6,5 @@ public class ReceiveAction implements Action{
 		System.out.println("메세지 받기");
 	}
 
-	@Override
-	public void method() {
-		
-	}
 
 }

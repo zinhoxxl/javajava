@@ -6,9 +6,4 @@ public class SendAction implements Action{
 		System.out.println("메세지 보내기");
 	}
 
-	@Override
-	public void method() {
-		
-	}
-
 }
