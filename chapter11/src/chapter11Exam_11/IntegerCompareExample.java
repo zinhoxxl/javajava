@@ -10,6 +10,7 @@ public class IntegerCompareExample {
 		
 		System.out.println(obj1 == obj2);
 		System.out.println(obj3 == obj4);
+		System.out.println(obj3.equals(obj4)); // 이렇게 해야한다.
 		
 	
 	}
