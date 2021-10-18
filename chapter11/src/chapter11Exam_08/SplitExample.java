@@ -10,7 +10,7 @@ public class SplitExample {
 		// 방법1(split() 메소드 이용)
 		String[] tokens = str.split(",");
 		for (String token : tokens) {
-			System.out.println(token);
+			System.out.print(token);
 		}
 
 		System.out.println();
@@ -18,8 +18,9 @@ public class SplitExample {
 		// 방법2(StringTokenizer 이용)
 		StringTokenizer st = new StringTokenizer(str, ",");
 		while (st.hasMoreElements()) {
-			String token = st.nextToken();
-            System.out.println(token);
+			// String token = st.nextToken();
+            // System.out.print(token);
+            System.out.print(st.nextElement()+" ");
 			
 		}
 
