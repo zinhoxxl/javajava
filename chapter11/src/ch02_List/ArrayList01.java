@@ -1,6 +1,7 @@
 package ch02_List;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayList01 {
@@ -9,6 +10,8 @@ public class ArrayList01 {
 		
 		//List 인터페이스 타입의 변수 선언 = ArrayList객체 생성
 		List<String> list = new ArrayList<>();
+		// 동기화 처리
+	    list = Collections.synchronizedList(list);
 		
 		// 객체 추가 메소드 add(객체);
 		list.add("Hello");

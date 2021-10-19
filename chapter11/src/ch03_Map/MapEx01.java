@@ -1,5 +1,6 @@
-package ch02_Map;
+package ch03_Map;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,6 +9,8 @@ public class MapEx01 {
 
      // Map인터페이스 선언
      Map<String, String> fruits = new HashMap<>();
+     // 동기화 처리
+     fruits = Collections.synchronizedMap(fruits);
      
      // put(key, value);
      fruits.put("apple", "사과"); // key = "apple", value = "사과"
