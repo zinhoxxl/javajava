@@ -18,6 +18,6 @@ public class FileOutPutStreamEx {
 		}
 		System.out.println("c:\\temp\\test.out을 저장하였습니다");
 
-	}
+	} 
 
 }
