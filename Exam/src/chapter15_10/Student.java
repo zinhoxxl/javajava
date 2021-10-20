@@ -18,7 +18,7 @@ public class Student implements Comparable<Student> {
 //			return 0;
 //		else
 //			return 1;
-        return this.score-o.score;
+        return this.score-o.score;  
 		
 		
 	}
