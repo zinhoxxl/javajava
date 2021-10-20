@@ -17,7 +17,7 @@ public class MapExample {
 		int avgScore = 0; // 점수 합계 저장(평균)
 
 		// 정답
-		Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
+		Set<Map.Entry<String, Integer>> entrySet = map.entrySet(); // key,value묶어서 같이 추출
 		for (Map.Entry<String, Integer> entry : entrySet) {
 			if (entry.getValue() > maxScore) {
 				name = entry.getKey();
@@ -25,8 +25,8 @@ public class MapExample {
 			}
 			avgScore += entry.getValue();
 		}
-		int avg = avgScore / map.size();
-		System.out.println("평균점수:" + maxScore);
+		System.out.println("평균점수:" + avgScore / map.size());
+		System.out.println("최고점수:"+maxScore);
 		System.out.println("최고점수를 받은 아이디:" + name);
 	}
 }
