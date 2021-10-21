@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 
 //이진데이타로 구성된 파일들(이미지,영상,사운드)
 public class BinaryCopyEx {
-public static void main(String[] args) {
+public static void main(String[] args) { 
 	//원본 파일정보
 	File src = new File("c:\\temp\\src.png");
 	//복사 파일정보
